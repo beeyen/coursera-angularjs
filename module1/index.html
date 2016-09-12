@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="nameCalculator"> <!-- this has to match the module declare in app.js -->
+  <head>
+    <meta charset="utf-8">
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Name Calculator</title>
+  </head>
+  <body>
+    <h1>Name Calculator</h1>
+    <div ng-controller="NameCalculatorController"> <!-- this bound to the controller -->
+        Your Name:
+        <input type="text" ng-model="name" ng-keyup="displayNumeric()">
+        <div>Total numeric value of person's name is: {{totalValue}} </div>
+    </div>
+  </body>
+</html>
