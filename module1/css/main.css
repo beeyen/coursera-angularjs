@@ -1,1 +1,7 @@
 .message { font-size: 1.3em; font-weight: bold;}
+.has-danger .form-control {
+    border-color: #d9534f;
+}
+.has-success .form-control {
+    border-color: #5cb85c;
+}
