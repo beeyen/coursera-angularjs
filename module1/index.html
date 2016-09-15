@@ -11,10 +11,10 @@
 <body>
    <div class="container" ng-controller="LunchCheckerController">
      <h1>Lunch Checker</h1>
-         <div class="form-group">
+         <div class="form-group has-{{status}}">
              <input id="lunch-menu" type="text" ng-model="menu"
              placeholder="list comma separated dishes you usually have for lunch"
-             class="form-control">
+             class="form-control form-control-{{status}}">
              <span class="label label-warning" ng-show="emptyItem">*** 'empty' items are NOT considered in the total ***</span>
          </div>
          <div class="form-group">
