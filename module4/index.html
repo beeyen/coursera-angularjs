@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app='MenuApp'>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Panda Express</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+        <div class="container">
+          <h2>Welcome to Panda Express Chinese Kitchen!</h2>
+        </div>
+    </div>
+      <div class="container">
+
+              <ui-view></ui-view>
+      </div>
+
+    <!-- Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+
+    <!-- Modules -->
+    <script src="src/data/data.module.js"></script>
+
+    <script src="src/menuApp/menuApp.module.js"></script>
+    <script src="src/menuApp/routes.js"></script>
+
+
+    <!-- 'data' module artifacts -->
+    <script src="src/data/menudata.service.js"></script>
+
+    <!-- 'MenuApp' module artifacts -->
+
+    <script src="src/menuApp/categorieslist.component.js"></script>
+    <script src="src/menuApp/main-categorieslist.controller.js"></script>
+    <script src="src/menuApp/items.component.js"></script>
+    <script src="src/menuApp/items.controller.js"></script>
+
+  </body>
+</html>
