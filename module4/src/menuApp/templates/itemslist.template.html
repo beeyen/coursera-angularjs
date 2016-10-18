@@ -1,6 +1,7 @@
 <div class="page-header"><h2>{{$ctrl.items.category.name}} <small>{{ $ctrl.items.category.special_instructions}}</small></h2></div>
 <div class="list-group">
-  <span class="list-group-item" ng-repeat="item in $ctrl.items.menu_items">
-    {{$index + 1}}. {{ item.name }}
-  </span>
+  <div class="list-group-item" ng-repeat="item in $ctrl.items.menu_items">
+    {{item.short_name}}. {{ item.name }} - <i>{{item.description}}</i>
+  </div>
+
 </div>
