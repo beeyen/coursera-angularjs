@@ -16,15 +16,17 @@
 
               <ui-view></ui-view>
       </div>
-
+    <loading-spinner></loading-spinner>
     <!-- Libraries -->
-    <script src="lib/angular.min.js"></script>
+    <script src="lib/jquery-3.1.0.min.js"></script>
+      <script src="lib/angular.min.js"></script>
     <script src="lib/angular-ui-router.min.js"></script>
 
 
     <!-- Modules -->
     <script src="src/data/data.module.js"></script>
-
+    <!-- Modules -->
+    <script src="src/spinner/spinner.module.js"></script>
     <script src="src/menuApp/menuApp.module.js"></script>
     <script src="src/menuApp/routes.js"></script>
 
@@ -38,6 +40,9 @@
     <script src="src/menuApp/main-categorieslist.controller.js"></script>
     <script src="src/menuApp/items.component.js"></script>
     <script src="src/menuApp/items.controller.js"></script>
+
+    <!-- 'Spinner' module artifacts -->
+    <script src="src/spinner/loadingspinner.component.js"></script>
 
   </body>
 </html>

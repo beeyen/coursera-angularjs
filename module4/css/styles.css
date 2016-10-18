@@ -4,3 +4,9 @@ body {
 .center {
   margin: 5% 40%;
 }
+
+.loading-icon {
+  position: absolute;
+  left: 50%;
+  top: 18%;
+}
